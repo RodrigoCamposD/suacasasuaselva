@@ -19,11 +19,11 @@
 }
 
 .first-folder {
-  background-image: url("img/background.webp");
+  background-image: url("../img/background.webp");
 }
 
 .seccond-folder {
-  background-image: url("img/overlay.webp");
+  background-image: url("../img/overlay.webp");
 }
 
 .to-top {
