@@ -3,7 +3,7 @@
 }
 
 .green {
-  color: #48632d;
+  color: #004f02;
 }
 
 .space-title {
@@ -11,7 +11,19 @@
 }
 
 .green-background {
-  background-color: #336502;
+  background-color: #004f02;
+}
+
+.folder-cover {
+  background-size: cover;
+}
+
+.first-folder {
+  background-image: url("img/background.webp");
+}
+
+.seccond-folder {
+  background-image: url("img/overlay.webp");
 }
 
 .to-top {

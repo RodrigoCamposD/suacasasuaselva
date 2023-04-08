@@ -39,13 +39,14 @@
       property="og:description"
       content="Aqui você vai descobrir todos os segredos e cuidados necessários para transformar sua casa em uma verdadeira Selva. Suas plantas merecem!"
     />
-    <meta property="og:url" content="https://suacasasuaselva.com/" />
+    <!-- FIXME:-->
+    <link rel="shortlink" href="https://dev.suacasasuaselva.com/" />
+    <meta property="og:url" content="https://dev.suacasasuaselva.com/" />
     <meta property="og:site_name" content="Sua casa, Sua selva" />
     <meta property="og:image" content="img/logo150.png" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:label1" content="Est. tempo de leitura" />
     <meta name="twitter:data1" content="16 minutos" />
-    <link rel="shortlink" href="https://suacasasuaselva.com/" />
     <!-- css -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
@@ -58,6 +59,10 @@
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     ></script> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <script defer src="script.js"></script>
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -69,20 +74,13 @@
     <!-- CONTENT START -->
     <main>
       <!-- primeira dobra -->
-      <div
-        id="inicio"
-        class="py-5"
-        style="
-          background-image: url('img/background.webp');
-          background-size: cover;
-        "
-      >
+      <div id="inicio" class="folder-cover first-folder py-5">
         <div class="container text-center text-white">
           <img
-            src="img/logo64.webp"
+            src="img/logo96.webp"
             alt="Sua Casa, Sua Selva!"
-            width="64"
-            height="64"
+            width="96"
+            height="96"
             class="img-fluid py-3"
           />
           <h1 class="display-6 fw-bold py-3">
@@ -101,7 +99,7 @@
             <a
               href="https://suacasasuaselva.carrinho.app/one-checkout/ocmsb/5537806"
               type="button"
-              class="btn btn-primary btn-lg shadow"
+              class="btn btn-primary btn-lg shadow animate__animated animate__pulse animate__infinite"
             >
               SIM, QUERO TER MINHA SELVA EM CASA!
             </a>
@@ -116,14 +114,7 @@
         </div>
       </div>
       <!-- segunda dobra -->
-      <div
-        id="descubra"
-        class="py-5"
-        style="
-          background-image: url('img/overlay.webp');
-          background-size: cover;
-        "
-      >
+      <div id="descubra" class="folder-cover seccond-folder py-5">
         <div class="container">
           <div class="row row-cols-1 row-cols-lg-2 align-items-center">
             <div class="col text-center text-lg-start py-3">
@@ -193,7 +184,7 @@
       <!-- quarta dobra -->
       <div id="inicio" class="green-background py-5">
         <div class="container text-center text-white">
-          <h1 class="display-6 fw-bold py-3">
+          <h1 class="display-5 fw-bold py-3">
             O QUE VOCÊ VAI <span class="orange">APRENDER</span>
           </h1>
           <p class="lead fw-semibold py-3">
@@ -206,7 +197,15 @@
             plantas podem nos proporcionar, este é um material ideal para quem
             busca uma metodologia descomplicada e resultados fantásticos.
           </p>
-          <div class="py-3"></div>
+          <div class="py-3">
+            <a
+              href="https://suacasasuaselva.carrinho.app/one-checkout/ocmsb/5537806"
+              type="button"
+              class="btn btn-primary btn-lg shadow animate__animated animate__pulse animate__infinite"
+            >
+              SIM, QUERO TER MINHA SELVA EM CASA!
+            </a>
+          </div>
         </div>
       </div>
     </main>

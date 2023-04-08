@@ -14,3 +14,17 @@ window.onscroll = function () {
     toTop.classList.add("d-none");
   }
 };
+
+const buttons = document.querySelectorAll(".btn");
+buttons.forEach((button) => {
+  button.addEventListener("mouseover", (e) => {
+    // button.style.animationPlayState = "paused";
+    button.classList.remove("animate__pulse", "animate__infinite");
+    button.classList.add("animate__heartBeat");
+  });
+  button.addEventListener("mouseout", (e) => {
+    // button.style.animationPlayState = "running";
+    button.classList.remove("animate__heartBeat");
+    button.classList.add("animate__pulse", "animate__infinite");
+  });
+});
