@@ -69,3 +69,44 @@ const fadeInUp = document.querySelectorAll(".fadeInUp");
 rubberBand.forEach((el) => observer.observe(el));
 fadeInLeft.forEach((el) => observer.observe(el));
 fadeInUp.forEach((el) => observer.observe(el));
+
+const COUNTDOWN_TIME = 4 * 60 * 60 + 17 * 60; // tempo em segundos
+const COUNTDOWN_STORAGE_KEY = "countdown_expiry";
+
+function startCountdown() {
+  let expiryTimestamp = parseInt(localStorage.getItem(COUNTDOWN_STORAGE_KEY));
+  if (!expiryTimestamp || expiryTimestamp < Date.now()) {
+    // se o valor não existe ou já expirou, cria um novo
+    expiryTimestamp = Date.now() + COUNTDOWN_TIME * 1000;
+    localStorage.setItem(COUNTDOWN_STORAGE_KEY, expiryTimestamp);
+  }
+
+  const countdownElement = document.getElementById("countdown");
+
+  function updateCountdown() {
+    const remainingSeconds = Math.max(
+      0,
+      Math.floor((expiryTimestamp - Date.now()) / 1000)
+    );
+    const hours = Math.floor(remainingSeconds / 3600);
+    const minutes = Math.floor((remainingSeconds % 3600) / 60);
+    const seconds = remainingSeconds % 60;
+
+    countdownElement.textContent = `${hours
+      .toString()
+      .padStart(2, "0")}:${minutes.toString().padStart(2, "0")}:${seconds
+      .toString()
+      .padStart(2, "0")}`;
+
+    if (remainingSeconds <= 0) {
+      // tempo expirado, reinicia a contagem
+      localStorage.removeItem(COUNTDOWN_STORAGE_KEY);
+      startCountdown();
+    }
+  }
+
+  updateCountdown(); // atualiza uma vez ao carregar a página
+  setInterval(updateCountdown, 1000); // atualiza a cada segundo
+}
+
+startCountdown();
