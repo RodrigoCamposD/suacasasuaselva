@@ -81,7 +81,9 @@ function startCountdown() {
     localStorage.setItem(COUNTDOWN_STORAGE_KEY, expiryTimestamp);
   }
 
-  const countdownElement = document.getElementById("countdown");
+  const hoursEl = document.getElementById("horas");
+  const minutesEl = document.getElementById("minutos");
+  const secondsEl = document.getElementById("segundos");
 
   function updateCountdown() {
     const remainingSeconds = Math.max(
@@ -92,11 +94,9 @@ function startCountdown() {
     const minutes = Math.floor((remainingSeconds % 3600) / 60);
     const seconds = remainingSeconds % 60;
 
-    countdownElement.textContent = `${hours
-      .toString()
-      .padStart(2, "0")}:${minutes.toString().padStart(2, "0")}:${seconds
-      .toString()
-      .padStart(2, "0")}`;
+    hoursEl.textContent = hours.toString().padStart(2, "0");
+    minutesEl.textContent = minutes.toString().padStart(2, "0");
+    secondsEl.textContent = seconds.toString().padStart(2, "0");
 
     if (remainingSeconds <= 0) {
       // tempo expirado, reinicia a contagem
@@ -110,3 +110,11 @@ function startCountdown() {
 }
 
 startCountdown();
+
+const dataAtual = new Date();
+const nomeMes = dataAtual.toLocaleDateString("pt-BR", { month: "long" });
+const promoString = `${dataAtual.getDate() - 2}, ${
+  dataAtual.getDate() - 1
+} e ${dataAtual.getDate()} de ${nomeMes}`;
+const promoStringEl = document.getElementById("days-month");
+promoStringEl.innerText = promoString;
