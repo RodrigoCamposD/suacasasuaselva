@@ -50,6 +50,42 @@
     <!-- css -->
     <link rel="stylesheet" href="scss/styles.scss" />
     <script type="module" src="js/main.js"></script>
+    <!-- Meta Pixel Code -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js"
+      );
+      fbq("init", "1314317449456833");
+      fbq("track", "PageView");
+    </script>
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=1314317449456833&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
   </head>
   <body>
     <!-- MENU START -->
@@ -74,6 +110,20 @@
             selva em casa.
           </h2>
           <div class="py-3">
+            <div style="position: relative; padding-top: 56.25%">
+              <iframe
+                id="panda-c4d251e7-0878-43a3-956e-5cf366c83905"
+                src="https://player-vz-5916907e-bd3.tv.pandavideo.com.br/embed/?v=c4d251e7-0878-43a3-956e-5cf366c83905"
+                style="border: none; position: absolute; top: 0; left: 0"
+                allow="accelerometer;gyroscope;autoplay;encrypted-media;picture-in-picture"
+                allowfullscreen="true"
+                width="100%"
+                height="100%"
+                fetchpriority="high"
+              ></iframe>
+            </div>
+          </div>
+          <div class="py-3 panda-1">
             <a
               href="https://suacasasuaselva.carrinho.app/one-checkout/ocmsb/5537806"
               type="button"
@@ -91,7 +141,7 @@
         </div>
       </div>
       <!-- segunda dobra -->
-      <div id="descubra" class="folder-cover seccond-folder py-5">
+      <div id="descubra" class="folder-cover seccond-folder py-5 panda-2">
         <div class="container">
           <div class="row row-cols-1 row-cols-lg-2 align-items-center">
             <div class="col text-center text-lg-start py-3">
@@ -162,7 +212,7 @@
         </div>
       </div>
       <!-- quarta dobra -->
-      <div id="o-que-voce-vai-aprender" class="green-background py-5">
+      <div id="o-que-voce-vai-aprender" class="green-background py-5 panda-2">
         <div class="container text-center text-white">
           <h2 class="rubberBand display-4 fw-bold py-3">
             O QUE VOCÊ VAI
@@ -180,7 +230,9 @@
           </p>
           <div class="row row-cols-1 row-cols-lg-2 align-items-center">
             <div class="col">
-              <div class="fadeInUp card darkgreen-background shadow my-3">
+              <div
+                class="fadeInUp card darkgreen-background shadow my-3 text-white"
+              >
                 <div class="card-body">
                   <img
                     src="img/dominar.webp"
@@ -197,7 +249,9 @@
                   </p>
                 </div>
               </div>
-              <div class="fadeInUp card darkgreen-background shadow my-3">
+              <div
+                class="fadeInUp card darkgreen-background shadow my-3 text-white"
+              >
                 <div class="card-body">
                   <img
                     src="img/substrato.webp"
@@ -216,7 +270,9 @@
               </div>
             </div>
             <div class="col">
-              <div class="fadeInUp card darkgreen-background shadow my-3">
+              <div
+                class="fadeInUp card darkgreen-background shadow my-3 text-white"
+              >
                 <div class="card-body">
                   <img
                     src="img/especies.webp"
@@ -232,7 +288,9 @@
                   </p>
                 </div>
               </div>
-              <div class="fadeInUp card darkgreen-background shadow my-3">
+              <div
+                class="fadeInUp card darkgreen-background shadow my-3 text-white"
+              >
                 <div class="card-body">
                   <img
                     src="img/decoracao.webp"
@@ -254,7 +312,7 @@
         </div>
       </div>
       <!-- quinta dobra -->
-      <div id="para-quem" class="folder-cover first-folder py-5">
+      <div id="para-quem" class="folder-cover first-folder py-5 panda-2">
         <div class="container text-center text-white">
           <div class="row row-cols-1 row-cols-lg-2 align-items-center">
             <div class="col py-3">
@@ -424,7 +482,7 @@
         </div>
       </div>
       <!-- sexta dobra -->
-      <div id="sua-plataforma" class="pt-5">
+      <div id="sua-plataforma" class="pt-5 panda-2">
         <div class="container text-center">
           <h2 class="orange space-title">SUA PLATAFORMA</h2>
           <p class="green display-4 fw-bold py-3">
@@ -528,14 +586,14 @@
         viewBox="0 0 120 20"
         preserveAspectRatio="xMidYMax slice"
         fill="white"
-        class="green-background"
+        class="green-background panda-2"
         style="transform-origin: center"
       >
         <path
           d="M0 0v6.7c1.9-.8 4.7-1.4 8.5-1 9.5 1.1 11.1 6 11.1 6s2.1-.7 4.3-.2c2.1.5 2.8 2.6 2.8 2.6s.2-.5 1.4-.7c1.2-.2 1.7.2 1.7.2s0-2.1 1.9-2.8c1.9-.7 3.6.7 3.6.7s.7-2.9 3.1-4.1 4.7 0 4.7 0 1.2-.5 2.4 0 1.7 1.4 1.7 1.4h1.4c.7 0 1.2.7 1.2.7s.8-1.8 4-2.2c3.5-.4 5.3 2.4 6.2 4.4.4-.4 1-.7 1.8-.9 2.8-.7 4 .7 4 .7s1.7-5 11.1-6c9.5-1.1 12.3 3.9 12.3 3.9s1.2-4.8 5.7-5.7c4.5-.9 6.8 1.8 6.8 1.8s.6-.6 1.5-.9c.9-.2 1.9-.2 1.9-.2s5.2-6.4 12.6-3.3c7.3 3.1 4.7 9 4.7 9s1.9-.9 4 0 2.8 2.4 2.8 2.4 1.9-1.2 4.5-1.2 4.3 1.2 4.3 1.2.2-1 1.4-1.7 2.1-.7 2.1-.7-.5-3.1 2.1-5.5 5.7-1.4 5.7-1.4 1.5-2.3 4.2-1.1c2.7 1.2 1.7 5.2 1.7 5.2s.3-.1 1.3.5c.5.4.8.8.9 1.1.5-1.4 2.4-5.8 8.4-4 7.1 2.1 3.5 8.9 3.5 8.9s.8-.4 2 0 1.1 1.1 1.1 1.1 1.1-1.1 2.3-1.1 2.1.5 2.1.5 1.9-3.6 6.2-1.2 1.9 6.4 1.9 6.4 2.6-2.4 7.4 0c3.4 1.7 3.9 4.9 3.9 4.9s3.3-6.9 10.4-7.9 11.5 2.6 11.5 2.6.8 0 1.2.2c.4.2.9.9.9.9s4.4-3.1 8.3.2c1.9 1.7 1.5 5 1.5 5s.3-1.1 1.6-1.4c1.3-.3 2.3.2 2.3.2s-.1-1.2.5-1.9 1.9-.9 1.9-.9-4.7-9.3 4.4-13.4c5.6-2.5 9.2.9 9.2.9s5-6.2 15.9-6.2 16.1 8.1 16.1 8.1.7-.2 1.6-.4V0H0z"
         ></path>
       </svg>
-      <div id="bonus" class="green-background pb-3">
+      <div id="bonus" class="green-background pb-3 panda-2">
         <div class="container text-center text-white">
           <h1 class="display-4 fw-bold py-3">
             BÔNUS <span class="orange">ESPECIAL</span> - MANUAL PARA CULTIVOS DE
@@ -927,7 +985,7 @@
         </div>
       </div>
       <!-- nona dobra -->
-      <div id="risco-zero" class="folder-cover first-folder pb-3">
+      <div id="risco-zero" class="folder-cover first-folder pb-3 panda-2">
         <div class="container text-center text-white">
           <h1 class="display-4 fw-bold py-3">
             RISCO <span class="orange">ZERO</span>
@@ -971,7 +1029,7 @@
         </div>
       </div>
       <!-- décima dobra -->
-      <div id="quanto-custa" class="green-background py-5">
+      <div id="quanto-custa" class="green-background py-5 panda-2">
         <div class="container text-center text-white">
           <h1 class="display-4 fw-bold py-3">
             VOCÊ DEVE ESTAR SE PERGUNTANDO:
@@ -1030,7 +1088,7 @@
         </div>
       </div>
       <!-- décima primeira dobra -->
-      <div id="aproveite" class="orange-background pb-3">
+      <div id="aproveite" class="orange-background pb-3 panda-2">
         <div class="container text-center text-white">
           <div class="row row-cols-1 row-cols-lg-2 align-items-center pb-3">
             <div class="col py-3">
@@ -1067,7 +1125,7 @@
         </div>
       </div>
       <!-- décima segunda dobra -->
-      <div id="faq" class="py-5">
+      <div id="faq" class="py-5 panda-2">
         <div class="container">
           <h2 class="green display-4 fw-bold py-3 text-center">
             <span class="orange">PERGUNTAS</span> FREQUENTES
@@ -1367,5 +1425,55 @@
       </div>
     </footer>
     <!-- FOOTER END -->
+    <!-- PANDA START -->
+    <script>
+      const TIMER1 = 880;
+      const TIMER2 = 930;
+      const IFRAME_ID = "panda-c4d251e7-0878-43a3-956e-5cf366c83905";
+      const API_ENDPOINT = "https://player.pandavideo.com.br/api.v2.js";
+
+      if (!document.querySelector(`script[src='${API_ENDPOINT}']`)) {
+        let s = document.createElement("script");
+        s.src = API_ENDPOINT;
+        s.async = true;
+        document.head.appendChild(s);
+      }
+
+      window.pandascripttag = window.pandascripttag || [];
+      window.pandascripttag.push(function () {
+        const p = new PandaPlayer(IFRAME_ID, {
+          onReady() {
+            const el1 = document.querySelectorAll(".panda-1");
+            const el2 = document.querySelectorAll(".panda-2");
+            p.onEvent((e) => {
+              const type = e.message;
+              if (type === "panda_timeupdate") {
+                const { currentTime, isMutedIndicator } = e;
+                if (isMutedIndicator) return;
+                if (currentTime < TIMER1) {
+                  el1.forEach((e) => {
+                    e.classList.add("d-none");
+                  });
+                } else if (currentTime > TIMER1) {
+                  el1.forEach((e) => {
+                    e.classList.remove("d-none");
+                  });
+                }
+                if (currentTime < TIMER2) {
+                  el2.forEach((e) => {
+                    e.classList.add("d-none");
+                  });
+                } else if (currentTime > TIMER2) {
+                  el2.forEach((e) => {
+                    e.classList.remove("d-none");
+                  });
+                }
+              }
+            });
+          },
+        });
+      });
+    </script>
+    <!-- PANDA END -->
   </body>
 </html>

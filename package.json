@@ -16,11 +16,15 @@
     "html"
   ],
   "author": "Rodrigo Campos",
-  "license": "ISC",
+  "license": "Unlicense",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/RodrigoCamposD/suacasasuaselva.git"
   },
+  "bugs": {
+    "url": "https://github.com/RodrigoCamposD/suacasasuaselva/issues"
+  },
+  "homepage": "https://github.com/RodrigoCamposD/suacasasuaselva#readme",
   "devDependencies": {
     "@parcel/packager-xml": "^2.8.3",
     "@parcel/transformer-sass": "^2.8.3",
@@ -30,6 +34,6 @@
   "dependencies": {
     "@popperjs/core": "^2.11.7",
     "animate.css": "^4.1.1",
-    "bootstrap": "^5.2.3"
+    "bootstrap": "^5.3.1"
   }
 }

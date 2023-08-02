@@ -4,7 +4,7 @@ RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
 # Evitar que o WordPress processe a subpasta "selva"
 RewriteBase /
-RewriteRule ^selva/ - [L]
+RewriteRule ^lp/ - [L]
 
 <IfModule mod_expires.c>
     ExpiresActive On
