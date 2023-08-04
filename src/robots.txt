@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://lp.suacasasuaselva.com/sitemap.e4267811.xml
+Sitemap: https://suacasasuaselva.com/sitemap.85ed55d0.xml

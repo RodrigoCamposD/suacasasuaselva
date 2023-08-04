@@ -2,10 +2,6 @@ RewriteEngine On
 RewriteCond %{HTTPS} off
 RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
-# Evitar que o WordPress processe a subpasta "selva"
-RewriteBase /
-RewriteRule ^lp/ - [L]
-
 <IfModule mod_expires.c>
     ExpiresActive On
     ExpiresByType image/webp "access plus 1 year"
