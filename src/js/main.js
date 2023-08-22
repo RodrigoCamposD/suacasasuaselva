@@ -1,5 +1,5 @@
-import "animate.css";
-import { Accordion } from "bootstrap";
+// import "animate.css";
+// import { Accordion } from "bootstrap";
 
 const footerText = document.getElementById("footer-text");
 const year = new Date();
